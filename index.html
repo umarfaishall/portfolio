@@ -212,37 +212,36 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="service-slider">
-                            <div class="service-slider-container">
-                                <div class="service-item padd-15" v-for="project in portfolioData.projects"
-                                    :key="project.id">
-                                    <div class="service-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img :src="project.image" :alt="project.title">
-                                        </div>
-                                        <h4>{{ project.title }}</h4>
-                                        <p>Tools: {{ project.tools }}</p>
-                                        <div style="margin-top: 20px;">
-                                            <a class="btn btn-service" @click="viewArticle(project.id)">Lihat
-                                                Selengkapnya</a>
-                                        </div>
+                        <div class="service-slider-container">
+                            <div class="service-item padd-15" v-for="project in displayedProjects" :key="project.id">
+                                <div class="service-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img :src="project.image" :alt="project.title">
+                                    </div>
+                                    <h4>{{ project.title }}</h4>
+                                    <p>Tools: {{ project.tools }}</p>
+                                    <div style="margin-top: 20px;">
+                                        <a class="btn btn-service" @click="viewArticle(project.id)">See More..</a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <button class="slider-prev" aria-label="Previous">‹</button>
-                        <button class="slider-next" aria-label="Next">›</button> -->
                         </div>
                     </div>
+                    <div class="row toggle-button-row">
+                        <button class="btn" @click="toggleShowAll" v-if="!showAll">Expand</button>
+                        <button class="btn" @click="toggleShowAll" v-if="showAll">Collapse</button>
+                    </div>
                 </div>
-
                 <!-- Footer start -->
                 <footer>
                     <p>&copy; 2025 Faishal Umar Al-Amin. All rights reserved.</p>
                 </footer>
                 <!-- Footer end -->
+            </section>
         </div>
+    </div>
 
-        <!-- Main content end -->
+    <!-- Main content end -->
     </div>
 
     <!-- style switcher start -->
@@ -276,12 +275,21 @@
         const portfolioApp = Vue.createApp({
             data() {
                 return {
-                    portfolioData: portfolioData
+                    portfolioData: portfolioData,
+                    showAll: false
+                }
+            },
+            computed: {
+                displayedProjects() {
+                    return this.showAll ? this.portfolioData.projects : this.portfolioData.projects.slice(0, 3);
                 }
             },
             methods: {
                 viewArticle(id) {
                     window.location.href = `baca.html?article=${id}`;
+                },
+                toggleShowAll() {
+                    this.showAll = !this.showAll;
                 }
             }
         });
@@ -289,6 +297,4 @@
     </script>
 </body>
 
-
 </html>
-
