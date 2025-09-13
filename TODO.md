@@ -1,0 +1,3 @@
+- [x] Add "link" field to article.json for each article with placeholder URLs
+- [x] Update js/baca.js to expose the link in Vue data
+- [x] Add button in baca.html to open the link in a new tab
