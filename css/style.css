@@ -123,7 +123,7 @@ ul{
     font-weight: 500;
     padding: 12px 35px;
     color: white;
-    border-radius: 40px;
+    border-radius: 5px;
     display: inline-block;
     white-space: nowrap;
     border: none;
@@ -554,8 +554,6 @@ h3.my-profession
 .service .service-item
 {
     margin-bottom: 30px;
-    flex: 0 0 50%;
-    max-width: 50%;
 }
 .service .service-item .service-item-inner
 {
@@ -618,39 +616,38 @@ h3.my-profession
     overflow: hidden;
 }
 .service-slider-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.toggle-button-row {
+    justify-content: center;
     display: flex;
-    transition: transform 0.5s ease;
-    width: 150%; /* Adjust based on number of items */
+    margin-bottom: 30px;
 }
 .service-slider .service-item {
-    flex: 0 0 25%;
-    max-width: 25%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 @media (max-width: 1199px) {
-    .service-slider .service-item {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
-    }
     .service-slider-container {
-        width: 100%; /* 6 items * 33.33% ≈ 200% */
+        grid-template-columns: repeat(3, 1fr);
+        
     }
 }
 @media (max-width: 991px) {
-    .service-slider .service-item {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
     .service-slider-container {
-        width: 100%; /* 3 items * 50% = 150% */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media (max-width: 767px) {
-    .service-slider .service-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
     .service-slider-container {
-        width: 100%; /* 6 items * 100% = 600% */
+        grid-template-columns: 1fr;
     }
 }
 
@@ -740,10 +737,10 @@ footer {
 @media (max-width:991px)
 {
     .service .service-item,
-    .portfolio .portfolio-item 
+    .portfolio .portfolio-item
     {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
     }
     .home .home-info
     {
