@@ -1,3 +1,4 @@
+
 # Testing Manual Web kasirAja 
 
 This project discusses conducting manual testing on kasirAja web.
@@ -28,5 +29,3 @@ After conducting a series of tests, I made a bug report, which is to conclude wh
 <br>
 <br>
 Here are the results of the testing I did:
-
-

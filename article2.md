@@ -1,3 +1,4 @@
+
 # Testing Manual API Pet Store via Swagger 
 
 In this project I did manual testing on the API using Swagger.
