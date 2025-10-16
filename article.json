@@ -2,30 +2,72 @@
 [
   {
     "id": 1,
-    "title": "Testing Manual kasirAja",
+    "title": "Web Automation Selenium WebDriver",
     "date": "Quality Assurance",
-    "content": "article.md",
-    "link": "https://drive.google.com/drive/folders/1c0OvpF7PBuxl31i8GsroruEp0LmaH36i?usp=sharing"
+    "content": "articles/article4.md",
+    "link": "https://github.com/umarfaishal/SauceDemo-SeleniumAutomation"
   },
   {
     "id": 2,
-    "title": "Test Plan Pinjam Sultan App",
+    "title": "Web Automation Selenium + Github Action",
     "date": "Quality Assurance",
-    "content": "article1.md",
-    "link": "https://drive.google.com/file/d/1Ij9M4IeRn657ZS8EQwyGQa9CbKBQiw50/view?usp=sharing"
+    "content": "articles/article5.md",
+    "link": "https://github.com/umarfaishal/Selenium-Github-Action"
   },
   {
     "id": 3,
-    "title": "Testing Manual API Pet Store",
+    "title": "Web Automation with Cypress",
     "date": "Quality Assurance",
-    "content": "article2.md",
-    "link": "https://docs.google.com/spreadsheets/d/1Nt2xr4Y3q7YP4U8t0aZ4yVjiOoPX1lxN/edit?usp=sharing&ouid=110073843166581590657&rtpof=true&sd=true"
+    "content": "articles/article6.md",
+    "link": "https://github.com/umarfaishal/kasirAja-CypressAutomation"
   },
   {
     "id": 4,
+    "title": "PetStore API Automation",
+    "date": "Quality Assurance",
+    "content": "articles/article9.md",
+    "link": "https://github.com/umarfaishal/PetStore-Postman"
+  },
+  {
+    "id": 5,
+    "title": "Mobile Automation Appium + Robot Framework",
+    "date": "Quality Assurance",
+    "content": "articles/article8.md",
+    "link": "https://github.com/umarfaishal/robot-framework-simple"
+  },
+  {
+    "id": 6,
+    "title": "API Automation Newman + Github Action",
+    "date": "Quality Assurance",
+    "content": "articles/article7.md",
+    "link": "https://github.com/umarfaishal/postman-github-action"
+  },
+  {
+    "id": 7,
+    "title": "Testing Manual kasirAja",
+    "date": "Quality Assurance",
+    "content": "articles/article.md",
+    "link": "https://drive.google.com/drive/folders/1c0OvpF7PBuxl31i8GsroruEp0LmaH36i?usp=sharing"
+  },
+  {
+    "id": 8,
+    "title": "Test Plan Pinjam Sultan App",
+    "date": "Quality Assurance",
+    "content": "articles/article1.md",
+    "link": "https://drive.google.com/file/d/1Ij9M4IeRn657ZS8EQwyGQa9CbKBQiw50/view?usp=sharing"
+  },
+  {
+    "id": 9,
+    "title": "Testing Manual API Pet Store",
+    "date": "Quality Assurance",
+    "content": "articles/article2.md",
+    "link": "https://docs.google.com/spreadsheets/d/1Nt2xr4Y3q7YP4U8t0aZ4yVjiOoPX1lxN/edit?usp=sharing&ouid=110073843166581590657&rtpof=true&sd=true"
+  },
+  {
+    "id": 10,
     "title": "Volunteer Management Web with Laravel",
     "date": "Web Development",
-    "content": "article3.md",
+    "content": "articles/article3.md",
     "link": "https://github.com/umarfaishal/laravel_project"
   }
 ]
